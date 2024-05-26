@@ -4,14 +4,14 @@ class Anagram:
     def __init__(self, word):
         self.word_letters = sorted([letter for letter in word])
 
-    def match(self, word_list):
-        match_word_list = []
+    def match(self, arr):
+        arr_list = []
 
-        for word in word_list:
+        for word in arr:
             if sorted([letter for letter in word]) == self.word_letters:
-                match_word_list.append(word)
+                arr_list.append(word)
 
-        return match_word_list
+        return arr_list
     
 
 sorte = Anagram("way")
